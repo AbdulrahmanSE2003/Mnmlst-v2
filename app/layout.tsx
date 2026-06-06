@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { LenisProvider } from "@/components/providers/LenisProvider";
 import PageTransition from "@/components/layout/Pagetransition";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const jetbrainsMonoJetbrainsMono = JetBrains_Mono({
   subsets: [
@@ -74,6 +75,7 @@ export default function RootLayout({
             <Navbar />
             <PageTransition>{children}</PageTransition>
           </LenisProvider>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

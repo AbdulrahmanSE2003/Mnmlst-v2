@@ -1,12 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { links } from "@/lib/constants";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
-const mobileLinks = [
-  { href: "/work", label: "work" },
-  { href: "/about", label: "about" },
-  { href: "/contact", label: "contact" },
-];
 
 const MobileNavMenu = ({
   open,
@@ -26,7 +21,7 @@ const MobileNavMenu = ({
           className="md:hidden fixed top-24 left-[5%] right-[5%] z-50 bg-background border-[1.5px] border-foreground/10 rounded-xl shadow-xl overflow-hidden"
         >
           <div className="flex flex-col p-4 gap-1">
-            {mobileLinks.map((link, i) => (
+            {links.map((link, i) => (
               <motion.div
                 key={link.href}
                 initial={{ opacity: 0, x: -12 }}

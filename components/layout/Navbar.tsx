@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Menu } from "lucide-react";
 import { Button } from "../ui/button";
 import ThemeToggle from "../ui/ThemeToggle";
-import NavLinks from "./navbar/NavLinks";
+import NavLinks from "./nvabar/NavLinks";
 import ButtonIcon from "../ui/ButtonIcon";
 import { useState } from "react";
-import MobileNavMenu from "./navbar/MobileNavMenu";
+import MobileNavMenu from "./nvabar/MobileNavMenu";
 import Logo from "./Logo";
 
 export default function Navbar() {
@@ -20,7 +20,7 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
-        className="mt-5 md:mt-3 w-[90%] md:w-[43%] bg-background mx-auto rounded-xl h-16 relative border-[1.5px] border-muted-foreground dark:border-foreground/10 shadow-xl flex items-center justify-between px-4"
+        className="md:mt-3 w-[90%] md:w-[43%] bg-background mx-auto rounded-xl h-16 border-[1.5px] border-muted-foreground dark:border-foreground/10 shadow-xl flex items-center justify-between px-4 fixed top-1 left-1/2 -translate-x-1/2 z-999"
       >
         {/* LOGO */}
         <Link href="/">

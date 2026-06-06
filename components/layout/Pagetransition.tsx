@@ -23,7 +23,7 @@ const curtainVariants: Variants = {
     transition: {
       duration: 1.2,
       times: [0, 0.4, 0.6, 1],
-      ease: [0.76, 0, 0.24, 1],
+      ease: [0.76, 0.15, 0.55, 1],
     },
   },
 };
@@ -43,9 +43,10 @@ export default function PageTransition({
         initial="initial"
         animate="animate"
         exit="exit"
+        className={`min-h-screen `}
       >
         <motion.div
-          className="fixed inset-0 z-50 bg-dark-bg pointer-events-none"
+          className="fixed inset-0 z-50 bg-foreground pointer-events-none"
           variants={curtainVariants}
           initial="initial"
           animate="animate"
