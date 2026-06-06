@@ -1,0 +1,60 @@
+// src/components/ui/ThemeToggle.tsx
+"use client";
+
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
+import { Button } from "./button";
+
+export default function ThemeToggle() {
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return <div className="w-9 h-9" />;
+
+  const isDark = resolvedTheme === "dark";
+  return (
+    <Button
+      size={"icon-lg"}
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      aria-label="Toggle theme"
+      variant={"icon"}
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        {isDark ? (
+          <motion.span
+            key="moon"
+            initial={{ opacity: 0, rotate: -0, scale: 0.5 }}
+            animate={{ opacity: 1, rotate: 0, scale: 1 }}
+            exit={{ opacity: 0, rotate: 0, scale: 0.5 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+          >
+            <Moon
+              size={18}
+              strokeWidth={1.5}
+              className={`stroke-foreground group-hover:stroke-background transition-colors duration-500`}
+            />
+          </motion.span>
+        ) : (
+          <motion.span
+            key="sun"
+            initial={{ opacity: 0, rotate: 0, scale: 0.5 }}
+            animate={{ opacity: 1, rotate: 0, scale: 1 }}
+            exit={{ opacity: 0, rotate: -0, scale: 0.5 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+          >
+            <Sun
+              size={18}
+              strokeWidth={1.5}
+              className={`stroke-foreground group-hover:stroke-background transition-colors duration-500`}
+            />
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </Button>
+  );
+}
