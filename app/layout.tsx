@@ -9,7 +9,6 @@ import Navbar from "@/components/layout/Navbar";
 
 const jetbrainsMonoJetbrainsMono = JetBrains_Mono({
   subsets: [
-    "menu",
     "cyrillic",
     "cyrillic-ext",
     "greek",
@@ -23,7 +22,6 @@ const jetbrainsMonoJetbrainsMono = JetBrains_Mono({
 
 const interInter = Inter({
   subsets: [
-    "menu",
     "cyrillic",
     "cyrillic-ext",
     "greek",
@@ -37,7 +35,7 @@ const interInter = Inter({
 });
 
 const plusJakartaSansPlusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["menu", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+  subsets: ["cyrillic-ext", "latin", "latin-ext", "vietnamese"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-plus-jakarta-sans",
 });
