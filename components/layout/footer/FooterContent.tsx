@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { links, socialLinks } from "@/lib/constants";
+import { links } from "@/lib/constants";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 
