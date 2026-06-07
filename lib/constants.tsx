@@ -1,11 +1,16 @@
+// NOTE: Imports
 import bgTextures from "@/public/images/bg-textures.webp";
+import personalPic from "@/public/images/personal-pic.jpg";
 
+// NOTE: Assets
 export const BG_TEXTURES = bgTextures;
+export const PERSONAL_PIC = personalPic;
 
+// NOTE: Lists
 export const links = [
   { href: "/", label: "home" },
-  { href: "/work", label: "work" },
   { href: "/about", label: "about" },
+  { href: "/work", label: "work" },
 ];
 
 export const socialLinks = [

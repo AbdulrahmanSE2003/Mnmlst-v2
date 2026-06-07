@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Menu } from "lucide-react";
 import { Button } from "../ui/button";
 import ThemeToggle from "../ui/ThemeToggle";
-import NavLinks from "./nvabar/NavLinks";
+import NavLinks from "./navbar/NavLinks";
 import ButtonIcon from "../ui/ButtonIcon";
 import { useState } from "react";
-import MobileNavMenu from "./nvabar/MobileNavMenu";
+import MobileNavMenu from "./navbar/MobileNavMenu";
 import Logo from "./Logo";
 
 export default function Navbar() {

@@ -20,14 +20,14 @@ const ButtonIcon = ({
   return (
     <motion.span
       role="button"
-      className={`w-10 h-10 p-4 rounded-lg cursor-pointer flex items-center justify-center overflow-hidden relative hover:bg-foreground group transition-colors duration-500`}
+      className={`w-10 f-10 p-4 rounded-lg cursor-pointer flex items-center justify-center overflow-hidden relative group transition-colors duration-200`}
       {...props}
     >
       <Icon
         size={size || 18}
         strokeWidth={strokeWidth || 1.5}
         className={cn(
-          `stroke-foreground group-hover:stroke-background transition-colors duration-500`,
+          // `stroke-foreground group-hover:stroke-background transition-colors duration-500`,
           className,
         )}
       />

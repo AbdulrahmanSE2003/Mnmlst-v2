@@ -20,10 +20,10 @@ export default function ThemeToggle() {
   const isDark = resolvedTheme === "dark";
   return (
     <Button
-      size={"icon-lg"}
+      className={`w-10 h-10`}
+      variant={"secondary"}
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label="Toggle theme"
-      variant={"icon"}
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDark ? (
