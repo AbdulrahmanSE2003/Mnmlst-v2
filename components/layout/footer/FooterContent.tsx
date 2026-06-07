@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { links, socialLinks } from "@/lib/constants";
 import Link from "next/link";
+import SocialLinks from "./SocialLinks";
 
 const FooterContent = () => {
   return (
@@ -10,21 +11,9 @@ const FooterContent = () => {
       {/* Left Col */}
       <div className={`flex flex-col gap-6 md:gap-12`}>
         {/* Footer Social Links */}
-        <div className={`flex items-center gap-3`}>
-          {socialLinks.map((link, i) => (
-            <Button
-              key={i}
-              variant={"icon"}
-              className={`rounded-full text-white hover:bg-white group hover:text-black size-12`}
-              asChild
-            >
-              <Link href={link.link} className={`group-hover:text-black`}>
-                {link.icon}
-              </Link>
-            </Button>
-          ))}
-        </div>
+        <SocialLinks />
 
+        {/* Navigation Links */}
         <div className={`capitalize flex items-center gap-3`}>
           {links.map((link, i) => (
             <Link

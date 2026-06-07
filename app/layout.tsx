@@ -74,8 +74,8 @@ export default function RootLayout({
           <LenisProvider>
             <Navbar />
             <PageTransition>{children}</PageTransition>
+            <Footer />
           </LenisProvider>
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

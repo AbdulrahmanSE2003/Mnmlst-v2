@@ -127,6 +127,10 @@
   html {
     @apply font-sans;
   }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 }
 
 :root {

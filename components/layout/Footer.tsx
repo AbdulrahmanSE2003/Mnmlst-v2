@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FooterContent from "./footer/FooterContent";
-import { BG_TEXTURES } from "@/lib/constants";
+import { bgTextures } from "@/lib/constants";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
     >
       {/* Footer Image */}
       <Image
-        src={BG_TEXTURES}
+        src={bgTextures}
         fill
         alt="background image"
         className={`object-cover opacity-35 dark:opacity-20`}
