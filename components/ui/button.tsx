@@ -10,7 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground hover:shadow-[inset_0_0_24px_0_var(--btn-glow)] ",
+          "bg-primary text-primary-foreground hover:shadow-[inset_0_0_24px_0_var(--btn-glow)]  transition-shadow duration-500",
+        primary:
+          "bg-background text-foreground border border-border hover:shadow-[inset_0_0_24px_0_var(--btn-glow)] transition-shadow duration-500",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
@@ -20,7 +22,7 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
-        icon: "w-10 h-10 p-2 rounded-lg border border-muted-foreground cursor-pointer flex items-center justify-center overflow-hidden relative hover:bg-foreground group transition-colors duration-500 ",
+        icon: " p-2 rounded-lg border border-muted-foreground cursor-pointer flex items-center justify-center overflow-hidden relative hover:bg-foreground group transition-colors duration-500 ",
       },
       size: {
         default:

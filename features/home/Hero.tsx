@@ -67,7 +67,7 @@ const Hero = () => (
 
     <motion.span
       variants={fadeUp}
-      className="absolute uppercase text-lg font-mono text-muted-foreground bottom-6 right-6 z-10"
+      className="absolute uppercase text-md font-mono text-muted-foreground bottom-6 right-6 z-10"
     >
       Building since 2023
     </motion.span>
@@ -84,7 +84,15 @@ const Hero = () => (
         delay: 3,
       }}
     >
-      <Image src={star} alt="" width={120} height={120} priority aria-hidden />
+      <Image
+        src={star}
+        alt="3d star image"
+        className={`dark:brightness-150`}
+        width={120}
+        height={120}
+        priority
+        aria-hidden
+      />
     </motion.div>
 
     <motion.div
@@ -98,7 +106,15 @@ const Hero = () => (
         delay: 3.5,
       }}
     >
-      <Image src={zap} alt="" width={120} height={120} priority aria-hidden />
+      <Image
+        src={zap}
+        alt="3d zap image"
+        className={`dark:brightness-150`}
+        width={120}
+        height={120}
+        priority
+        aria-hidden
+      />
     </motion.div>
   </motion.section>
 );
