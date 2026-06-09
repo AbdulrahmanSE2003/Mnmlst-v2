@@ -1,5 +1,7 @@
 // NOTE: Imports
 import bgTextures from "@/public/images/bg-textures.webp";
+import star from "@/public/images/star.png";
+import zap from "@/public/images/zap.png";
 import about1 from "@/public/images/about-1.jpg";
 import about2 from "@/public/images/about-2.avif";
 import about3 from "@/public/images/about-3.avif";
@@ -16,6 +18,8 @@ import process2 from "@/public/images/process-2.avif";
 
 // NOTE: Assets
 export {
+  star,
+  zap,
   bgTextures,
   about1,
   about2,
@@ -132,7 +136,7 @@ export const experiences = [
   {
     role: "Frontend Mentor",
     company: "GDG on Campus",
-    duration: "Jan 2025 – Present",
+    duration: "Jan 2025 – Apr 2025",
     description:
       "Mentoring 15+ students in React.js, state management, and responsive design.",
   },

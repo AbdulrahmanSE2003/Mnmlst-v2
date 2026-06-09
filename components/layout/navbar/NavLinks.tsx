@@ -13,7 +13,7 @@ const NavLinks = () => {
         <Link
           key={link.href}
           href={link.href}
-          className={`text-sm transition-colors duration-500 capitalize ${
+          className={`text-sm transition-colors duration-500 font-medium capitalize ${
             pathname === link.href
               ? "text-foreground"
               : "text-muted-foreground hover:text-foreground "
