@@ -1,11 +1,11 @@
-import Glimbse from "@/features/home/Glimbse";
+import Glimpse from "@/features/home/Glimpse";
 import Hero from "@/features/home/Hero";
 
 const page = () => {
   return (
     <div className={``}>
       <Hero />
-      <Glimbse />
+      <Glimpse />
     </div>
   );
 };

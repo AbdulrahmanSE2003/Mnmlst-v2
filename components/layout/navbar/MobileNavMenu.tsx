@@ -18,7 +18,7 @@ const MobileNavMenu = ({
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -8, scale: 0.98 }}
           transition={{ duration: 0.25, ease: [0.32, 0.72, 0, 1] }}
-          className="md:hidden fixed top-24 left-[5%] right-[5%] z-50 bg-background border-[1.5px] border-foreground/10 rounded-xl shadow-xl overflow-hidden"
+          className="md:hidden max-w-3/4 mx-auto fixed top-24 left-[5%] right-[5%] z-50 bg-background border-[1.5px] border-foreground/10 rounded-xl shadow-xl overflow-hidden"
         >
           <div className="flex flex-col p-4 gap-1">
             {links.map((link, i) => (
@@ -45,7 +45,7 @@ const MobileNavMenu = ({
             <motion.div
               initial={{ opacity: 0, x: -12 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: mobileLinks.length * 0.06, duration: 0.2 }}
+              transition={{ delay: links.length * 0.06, duration: 0.2 }}
               className="mt-2 pt-3 border-t border-foreground/10 h-14"
             >
               <Button asChild className="w-full h-full">
