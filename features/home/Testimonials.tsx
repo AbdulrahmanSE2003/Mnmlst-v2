@@ -1,43 +1,9 @@
 // src/components/home/Testimonials.tsx
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Flame, Layers, Sparkles, Terminal } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
-const testimonials = [
-  {
-    name: "Abdullah Fathallah",
-    role: "Backend Engineer",
-    quote:
-      "A highly professional frontend engineer. His code is clean, production-ready, and meticulously polished.",
-    initial: <Terminal className="size-18 stroke-[1.5px]  text-muted" />,
-  },
-  {
-    name: "Mahmoud Harraz",
-    role: "CEO & Founder",
-    company: "Edmen Co",
-    quote:
-      "He executed our product vision flawlessly and delivered ahead of schedule. Exceptional speed without sacrificing quality.",
-    initial: <Sparkles className="size-18 stroke-[1.5px]  text-muted" />,
-  },
-  {
-    name: "Ramez Khaled",
-    role: "Co-Founder & Frontend Engineer",
-    company: "Texon",
-    quote:
-      "Incredible technical execution and rapid turnaround. He consistently bridges the gap between complex logic and seamless UI.",
-    initial: <Layers className="size-18 stroke-[1.5px]  text-muted" />,
-  },
-  {
-    name: "Dr. Salma",
-    role: "Founder",
-    company: "Ashiaa Online Store",
-    quote:
-      "Translated complex specifications into pixel-perfect, highly responsive interfaces on the first attempt. Brilliant execution.",
-    initial: <Flame className="size-18 stroke-[1.5px] text-muted" />,
-  },
-];
+import { testimonials } from "@/lib/constants";
 
 function FlipCard({ item }: { item: (typeof testimonials)[0] }) {
   return (
