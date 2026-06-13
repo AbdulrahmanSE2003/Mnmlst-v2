@@ -55,20 +55,20 @@ const ProjectCard = ({ p }: { p: Project }) => (
 const CtaCard = () => (
   <motion.div
     variants={cardVariants}
-    className="relative h-120 rounded-4xl overflow-hidden shadow-2xl group bg-zinc-900"
+    className="relative h-120 rounded-4xl overflow-hidden shadow-2xl group bg-zinc-800"
   >
     <Image
       src={bgTextures}
       alt=""
       fill
       aria-hidden
-      className="object-cover opacity-40 transition-transform duration-700 group-hover:scale-103"
+      className="object-cover transition-transform duration-700 group-hover:scale-103"
     />
 
     <div className="absolute inset-0 bg-linear-to-b from-foreground/50 to-foreground/25 pointer-events-none" />
 
     <div className="absolute inset-0 z-10 flex flex-col justify-between p-6 text-white">
-      <h6 className="text-4xl font-medium leading-snug max-w-xs">
+      <h6 className="text-4xl font-semibold font-plus-jakarta-sans leading-snug max-w-xs">
         See how I shape ideas with clarity and craft — explore more.
       </h6>
 
