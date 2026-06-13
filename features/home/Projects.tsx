@@ -31,16 +31,17 @@ const cardVariants: Variants = {
 const ProjectCard = ({ p }: { p: Project }) => (
   <motion.div
     variants={cardVariants}
-    className="relative h-120 rounded-4xl overflow-hidden shadow-2xl group border border-zinc-200 dark:border-zinc-800"
+    className="relative h-120 rounded-4xl overflow-hidden shadow-2xl group border border-zinc-700"
   >
     <Image
       src={p.image}
       alt={p.title}
       fill
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       className="object-cover transition-transform duration-700 group-hover:scale-105"
     />
 
-    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
+    <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
 
     <div className="absolute inset-0 z-10 flex flex-col justify-end gap-3 p-8 text-white">
       <h6 className="text-3xl font-semibold drop-shadow-md">{p.title}</h6>

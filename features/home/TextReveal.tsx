@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const text =
-  "idea to launch. Clean, scalable digital products built to move fast, stay simple, and perform in real-world use — driven by clarity, structured systems, and intentional design. Every line of code written with purpose, every interface crafted with care, and every decision made to serve the product and the people using it.";
+  "idea to launch. Clean, scalable digital products built to move fast, stay simple, and perform in real-world use — driven by clarity. Every line of code written with purpose, and every decision made to serve the product and the people using it.";
 
 const words = text.split(" ");
 

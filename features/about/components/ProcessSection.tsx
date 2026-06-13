@@ -32,7 +32,9 @@ const ProcessSection = () => {
                   {step.id}
                 </span>
                 <div>
-                  <h4 className="text-xl font-medium mb-2">{step.title}</h4>
+                  <h4 className="text-xl font-plus-jakarta-sans font-medium mb-2">
+                    {step.title}
+                  </h4>
                   <p className="font-light opacity-70 text-sm max-w-xs">
                     {step.desc}
                   </p>
