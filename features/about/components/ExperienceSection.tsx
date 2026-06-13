@@ -16,7 +16,9 @@ const ExperienceSection = () => {
       <ul className="flex flex-col gap-8">
         {experiences.map((exp, index) => (
           <li key={index} className="flex flex-col gap-1.5">
-            <span className="text-lg font-medium">{exp.role}</span>
+            <span className="text-lg font-medium font-plus-jakarta-sans">
+              {exp.role}
+            </span>
             <span className="text-sm text-foreground/50 font-mono">
               {exp.company} · {exp.duration}
             </span>

@@ -21,7 +21,7 @@ const jetbrainsMonoJetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
-const archivioArchivio = Archivo({
+const archivo = Archivo({
   subsets: ["latin", "latin-ext"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-archivo",
@@ -56,7 +56,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn(
         plusJakartaSansPlusJakartaSans.variable,
-        archivioArchivio.variable,
+        archivo.variable,
         jetbrainsMonoJetbrainsMono.variable,
       )}
     >

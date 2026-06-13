@@ -26,7 +26,7 @@ function FlipCard({ item }: { item: (typeof testimonials)[0] }) {
 
         {/* Back */}
         <div
-          className="absolute inset-0 rounded-3xl border border-border bg-sidebar-foreground text-background flex flex-col justify-between p-6"
+          className="absolute inset-0 rounded-3xl border border-border bg-foreground text-background flex flex-col justify-between p-6"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
