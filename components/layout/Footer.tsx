@@ -12,6 +12,7 @@ const Footer = () => {
         src={bgTextures}
         fill
         alt="background image"
+        sizes="100vw"
         className={`object-cover opacity-35 dark:opacity-20`}
       />
 

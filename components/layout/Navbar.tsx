@@ -20,7 +20,7 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
-        className="md:mt-3 w-[90%] md:w-[43%] bg-background mx-auto rounded-xl h-16 border-[1.5px] border-muted-foreground dark:border-foreground/10 shadow-xl flex items-center justify-between px-4 fixed top-1 left-1/2 -translate-x-1/2 z-999"
+        className="mt-3 w-[75%] md:w-[43%] bg-background mx-auto rounded-xl h-16 border-[1.5px] border-muted-foreground dark:border-foreground/10 shadow-xl flex items-center justify-between px-4 fixed top-1 left-1/2 -translate-x-1/2 z-999"
       >
         {/* LOGO */}
         <Link href="/">
@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="flex md:hidden items-center gap-2">
           <ThemeToggle />
           <Button
-            variant={"icon"}
+            variant={"secondary"}
             size={"icon-lg"}
             onClick={() => setOpen((p) => !p)}
             aria-label="Toggle menu"

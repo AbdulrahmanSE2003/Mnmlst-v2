@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, JetBrains_Mono, Archivo } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
@@ -21,20 +21,11 @@ const jetbrainsMonoJetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
-const interInter = Inter({
-  subsets: [
-    "cyrillic",
-    "cyrillic-ext",
-    "greek",
-    "greek-ext",
-    "latin",
-    "latin-ext",
-    "vietnamese",
-  ],
+const archivioArchivio = Archivo({
+  subsets: ["latin", "latin-ext"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-inter",
+  variable: "--font-archivo",
 });
-
 const plusJakartaSansPlusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["cyrillic-ext", "latin", "latin-ext", "vietnamese"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -65,7 +56,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn(
         plusJakartaSansPlusJakartaSans.variable,
-        interInter.variable,
+        archivioArchivio.variable,
         jetbrainsMonoJetbrainsMono.variable,
       )}
     >

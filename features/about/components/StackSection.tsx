@@ -31,7 +31,7 @@ const StackSection = () => {
             {/* Info */}
             <div className="col-span-4 group flex items-start gap-6 py-5 cursor-default">
               <div className="flex flex-col gap-1">
-                <span className="text-lg font-medium text-foreground/85 group-hover:text-foreground transition-colors duration-300">
+                <span className="text-lg font-plus-jakarta-sans font-medium text-foreground/85 group-hover:text-foreground transition-colors duration-300">
                   {item.name}
                 </span>
                 <span className="text-sm font-light text-foreground/75 leading-relaxed group-hover:text-foreground/60 transition-colors duration-300">
